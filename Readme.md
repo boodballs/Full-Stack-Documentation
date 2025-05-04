@@ -2,7 +2,7 @@
 
 **Version:** 1.0
 **Date:** May 4, 2025
-**Author:** [Your Name/Team Name]
+**Author:** Abdulla Alkhodari
 
 This document outlines the development approach for our full-stack application, following a structured methodology of building the application layers in the order of Database, Backend, and then Frontend. Each stage will emphasize thorough documentation and testing to ensure a robust and maintainable application.
 
