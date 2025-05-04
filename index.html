@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Optional custom styles */
+        .hero-section {
+            background-color: #f7fafc;
+        }
+        .project-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.25rem;
+            overflow: hidden;
+        }
+        .project-image {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-indigo-600">My Portfolio</a>
+                <ul class="hidden md:flex space-x-6">
+                    <li><a href="#about" class="hover:text-indigo-500">About</a></li>
+                    <li><a href="#projects" class="hover:text-indigo-500">Projects</a></li>
+                    <li><a href="#skills" class="hover:text-indigo-500">Skills</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
+                </ul>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section py-20">
+        <div class="container mx-auto px-4 text-center">
+            <img src="https://via.placeholder.com/150" alt="Your Avatar" class="rounded-full mx-auto mb-6 shadow-lg">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Hi, I'm [Your Name]</h1>
+            <p class="text-lg text-gray-600 mb-8">A passionate [Your Profession] showcasing my work.</p>
+            <a href="#projects" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full">View My Projects</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <p class="text-lg text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="text-lg text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card shadow-md">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 1" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 1</h3>
+                        <p class="text-gray-600 text-sm mb-3">Short description of the project.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-500">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card shadow-md">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 2" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 2</h3>
+                        <p class="text-gray-600 text-sm mb-3">Another interesting project I worked on.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-500">Learn More</a>
+                    </div>
+                </div>
+                <div class="project-card shadow-md">
+                    <img src="https://via.placeholder.com/400x200" alt="Project 3" class="project-image">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Project Title 3</h3>
+                        <p class="text-gray-600 text-sm mb-3">A brief overview of this project.</p>
+                        <a href="#" class="text-indigo-600 hover:text-indigo-500">Learn More</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">HTML</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">CSS</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">JavaScript</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">React</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">Node.js</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">Express.js</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">PostgreSQL</div>
+                <div class="bg-white rounded-md shadow-sm p-4 text-center">Git</div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Me</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 text-center text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 My Awesome Portfolio. All rights reserved.</p>
+            <ul class="flex justify-center space-x-4 mt-2">
+                <li><a href="#" class="hover:text-indigo-400">LinkedIn</a></li>
+                <li><a href="#" class="hover:text-indigo-400">GitHub</a></li>
+                <li><a href="#" class="hover:text-indigo-400">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Basic mobile navigation toggle (optional)
+        const mobileNavButton = document.querySelector('.md\\:hidden button');
+        const navLinks = document.querySelector('.md\\:flex');
+
+        if (mobileNavButton && navLinks) {
+            mobileNavButton.addEventListener('click', () => {
+                navLinks.classList.toggle('hidden');
+                navLinks.classList.toggle('flex');
+            });
+        }
+    </script>
+
+</body>
+</html>
